@@ -1,2 +1,2 @@
 # training-log
-Training log for React.js and other BigBinary web development course material
+Training log for React.js and other web development course material
