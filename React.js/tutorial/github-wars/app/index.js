@@ -12,7 +12,7 @@ class App extends React.Component {
     render() {
         return(
             <div className = 'container'>
-                <Popular />
+                <Battle />
             </div>
         )
     }
@@ -20,7 +20,7 @@ class App extends React.Component {
 
 ReactDOM.render(
     //React Element
-    <App />,
+    < App />,
     //Where to render this element
     document.getElementById('app')
 )
