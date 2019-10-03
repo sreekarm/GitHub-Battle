@@ -94,7 +94,7 @@ ReposGrid.propTypes = {
 export default class Popular extends React.Component {
     state = {
         selectedLanguage: 'All',
-        repos: {},
+        repos: [],
         error: null,
     }
     componentDidMount(){

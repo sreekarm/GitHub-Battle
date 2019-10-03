@@ -12,7 +12,7 @@ function getErrorMsg(message, username){
 
 function getProfile(username){
     return fetch('https://api.github.com/users/${username}${params}')
-        .then((res) => res.json())
+        .then((response) => response.json())
         .then((profile) => {
             if(profile.message){
                 throw new Error(getErrorMsg(profile.message, username))
@@ -24,7 +24,7 @@ function getProfile(username){
 
 function getRepos(username){
     return fetch('https://api.github.com/users/${username}/repos${params)&per_page=100')
-        .then((res) => res.json())
+        .then((response) => response.json())
         .then(() => {
             if(repos.message){
                 throw new error(getErrorMsg(repos.message, username))
@@ -66,7 +66,7 @@ export function battle(players){
 export function fetchPopularRepos(language){
     const endpoint = window.encodeURI('https://api.github.com/search/repositories?q=stars:>1+language:${language}&sort=stars&order=desc&type=Repositories')
     return fetch({endpoint})
-        .then((res) => res.json)
+        .then((response) => response.json())
         .then((data) => {
             if(!data.items){
                 throw new Error(data.message)
