@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {FaUserFriends, FaFighterJet, FaTrophy, FaTimesCircle} from 'react-icons/fa'
 import Results from './Results'
-import Battle from '../contexts/theme'
 import {Link} from 'react-router-dom'
 
 function Instructions(){

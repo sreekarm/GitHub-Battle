@@ -13,10 +13,10 @@ export default function Nav(){
                 <nav className = 'row space-between'>
                     <ul className='row nav'>
                         <li>
-                            <NavLink to='/' exact activeStyle={activeStyle} className='nav-link'> Popular </Link>
+                            <NavLink to='/' exact activeStyle={activeStyle} className='nav-link'> Popular </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/battle' activeStyle={activeStyle} className='nav-link'> Battle </Link>
+                            <NavLink to='/battle' activeStyle={activeStyle} className='nav-link'> Battle </NavLink>
                         </li>
                     </ul>
                     <button

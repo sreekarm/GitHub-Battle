@@ -103,7 +103,7 @@ export default class Popular extends React.Component {
     updateLanguage = (selectedLanguage) => {
         this.setState({
             selectedLanguage,
-            error: null
+            error: null,
         })
     
         if(!this.state.repos[selectedLanguage]){
