@@ -11,7 +11,7 @@ function getErrorMsg(message, username){
 }
 
 function getProfile(username){
-    return fetch('https://api.github.com/users/${username}${params}')
+    return fetch("https://api.github.com/users/${username}${params}")
         .then((response) => response.json())
         .then((profile) => {
             if(profile.message){
@@ -23,7 +23,7 @@ function getProfile(username){
 }
 
 function getRepos(username){
-    return fetch('https://api.github.com/users/${username}/repos${params)&per_page=100')
+    return fetch("https://api.github.com/users/${username}/repos${params)&per_page=100")
         .then((response) => response.json())
         .then(() => {
             if(repos.message){
@@ -64,7 +64,7 @@ export function battle(players){
 }
 
 export function fetchPopularRepos(language){
-    const endpoint = window.encodeURI('https://api.github.com/search/repositories?q=stars:>1+language:${language}&sort=stars&order=desc&type=Repositories')
+    const endpoint = window.encodeURI("https://api.github.com/search/repositories?q=stars:>1+language:${language}&sort=stars&order=desc&type=Repositories")
     return fetch({endpoint})
         .then((response) => response.json())
         .then((data) => {
