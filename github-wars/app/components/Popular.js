@@ -29,7 +29,7 @@ LanguagesNav.propTypes = {
     onUpdateLanguage: PropTypes.func.isRequired
 }
 
-function ReposGrid({repos}){
+function ReposGrid({ repos }){
     return(
         <ul className='grid space-around'>
             {repos.map((repo, index) => {
@@ -85,10 +85,6 @@ function ReposGrid({repos}){
             })}
         </ul>
     )
-}
-
-ReposGrid.propTypes = {
-    repos: PropTypes.array.isRequired
 }
 
 export default class Popular extends React.Component {
